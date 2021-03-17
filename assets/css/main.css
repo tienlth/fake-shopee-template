@@ -7,7 +7,7 @@
 
 nav.header__nav-bar{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-top: 4px;
 }
@@ -324,6 +324,7 @@ ul.header__right-nav a{
 
 .header__logo {
     flex: 1.5308;
+    display: none;
 }
 
 .header__logo svg{
@@ -608,6 +609,24 @@ main.content{
     background-color: #F5F5F5;
 }
 
+.content__taplet-nav{
+    display: none;
+    background-color: #fff;
+}
+
+.content__taplet-nav li{
+    font-size: 1.4rem;
+    text-align: center;
+    display: inline-flex;
+}
+
+.content__taplet-nav li a{
+    text-decoration: none;
+    padding: 16px 0 12px;
+    color: inherit;
+    width: 100%;
+}
+
 .content__container{
     padding: 32px 0;
     display: flex;
@@ -669,6 +688,7 @@ main.content{
     flex: 5.25;
     margin-left: 10px;
     margin-top: 4px;
+    max-width: 100%;
 }
 
 .content__sort{
@@ -676,7 +696,7 @@ main.content{
     margin-bottom: 12px;
     border-radius: 2px;
     padding: 13px 22px;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -707,6 +727,7 @@ main.content{
     color: #fff;
     background-color: #EE4D2D !important;
 }
+
 
 .content__sort .sort__type{
     font-size: 1.4rem;
@@ -790,10 +811,10 @@ main.content{
  giao nhau của outline và inline, transparent là giá trị màu trong suốt */
 
 .content__items-wrapper{
-     display: inline-flex;
-     flex-wrap: wrap;
-     margin-left: -5px;
-     margin-right: -5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
  }
  
 .content__items-wrapper a{
@@ -882,29 +903,29 @@ main.content{
 .content__items .items-img{
     width: 100%;
     height: 156px;
+    max-width: 100%;
     background-image: url(https://media3.scdn.vn/img3/2019/2_21/hVHWYf_simg_de2fe0_500x500_maxb.jpg);
     background-size: cover;
 }
 
 .content__items .items__info{
-    display: inline-block;  
     width:100%;
-    padding: 8px 6px 10px;
+    margin: 8px 6px 10px;
 }
 
-
 .content__items .items__info h4{
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
     line-height: 1.8rem;
     color: #000;
     font-weight: 400;
-}
-
-.content__items .items__info h4:nth-child(2){
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
     padding-right: 10px;
 }
+
 
 .items__price{
     margin-left: 20px;
@@ -1001,17 +1022,14 @@ ul.content__main-nav-page  li i{
 .footer-nav{
     border-top: 4px solid #EE4D2D;
     font-size: 1.4rem;
-    padding: 26px 0 32px;    
+    padding: 26px 0 8px;    
 }
 
 .footer-nav__content{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
-}
-
-.footer-nav__content-items{
-    padding: 0 12px;
 }
 
 .footer-nav__content-list ul{
@@ -1058,7 +1076,7 @@ ul.content__main-nav-page  li i{
 
 .footer-nav__content-items{
     flex-basis: 20%;
-
+    padding: 0 12px 24px;
 }
 
 .footer-qr__content{

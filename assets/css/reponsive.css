@@ -1,0 +1,170 @@
+/* PC */
+@media (max-width: 1239px) and (min-width: 1024px){
+    nav.header__nav-bar,
+    .content__sort{
+        display: flex !important;
+    }
+
+    .header__logo{
+        display: block !important;
+    }
+
+}
+
+/* TAPLET */
+@media (max-width: 1023px) and (min-width: 740px){
+
+    .main-col{
+        max-width: 644px;
+    }
+
+    .content__container{
+        max-width: 660px;
+    }
+
+    
+
+    /* .header__search-scop{
+        min-width: 141px;
+    } */
+
+    .search-input{
+        flex-basis: 63% !important;
+    }
+
+    .header__search-scop{
+        flex-basis: 25.2% !important;
+    }
+
+    .header__search-scop::before{
+        margin-right: 8px;
+    }
+
+    .search-submit{
+        flex-basis: 11% !important;
+
+    }
+
+    .header__search{
+        max-width: 548px;
+    }
+
+    .header__shopping-cart-wraper{
+        max-width: 80px;
+    }
+
+    .header{
+        height: 68px; 
+        position: fixed;
+        display: block;
+        width: 100%;
+    }
+
+    .header__bottom {
+        height: 68px;  
+    }
+
+    .header__content{
+        display: flex;
+        align-content: center;
+    }
+    
+    .content__sidebar{
+        display: none;
+    }
+
+    .content__main{
+        margin: 0;
+    }
+
+    .content__items-wrapper{
+        margin: 0; /*  */
+    }
+
+    .content__items-wrapper a{
+        width: 33.33333%;
+        padding: 0 8px;
+    }
+
+    .header__shopping-cart{
+        margin-left: 43px;
+    }
+
+    .content__taplet-nav{
+        list-style: none;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 68px;
+        z-index: 99999;
+    }
+
+    .content__taplet-nav li{
+        flex-basis: 25%;
+    }
+
+    .content__main{
+        margin-top: 100px;
+    }
+
+    .taplet-nav__items--focus{
+        color:#F14D2D !important;
+    }
+
+    .items-img{
+        height: 204px !important;
+    }
+
+    .items__price{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 28px;
+    }
+
+    .items__heart{
+        flex: 4;
+        margin-right: 0;
+
+    }
+
+    .items__stars{
+        flex: 3;
+        margin-right: 4px;
+    }
+
+    .items__sold{
+        flex: 3;
+        padding: 0;
+        margin-right: 8px;
+    }
+
+    .content__main-nav-page{
+        padding-left: 60px !important;
+    }
+
+    .footer-nav__content-items{
+        flex-basis: 33.33333% !important;
+    }
+
+    .footer-nav__content-qr{
+        flex-basis: 50% !important;
+    }
+    
+    .footer-qr__content{
+        justify-content: flex-start;
+    }
+
+    .qr-code__right{
+        padding-left: 16px;
+    }
+
+}
+
+/* PHONE */
+@media (max-width: 739px){
+
+
+
+}
