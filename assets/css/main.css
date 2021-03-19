@@ -332,14 +332,13 @@ ul.header__right-nav a{
 }
 
 .header__search{
-    display: inline-flex;
+    display: flex;
     height: 40px;
     align-items: center;
     background-color: #fff;
     border-radius: 2px;
     flex: 4.9;
 }
-
 
 
 .header__search .search-items{
@@ -402,6 +401,7 @@ ul.header__right-nav a{
     margin-top: 2px;
     display: none;
     animation: apear 0.2s ease-in;
+    z-index: 99999;
 }
 
 .header__search-scop .search-submenu li{
@@ -609,15 +609,34 @@ main.content{
     background-color: #F5F5F5;
 }
 
-.content__taplet-nav{
+.search-taplet-btn{
     display: none;
+}
+
+.content__taplet-nav{
+    display: flex;
     background-color: #fff;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    top: 68px;
+    z-index: 99;
+}
+
+.taplet-nav__items--focus{
+    color:#F14D2D !important;
+}
+
+.content__phone-nav{
+    display: none;
 }
 
 .content__taplet-nav li{
     font-size: 1.4rem;
     text-align: center;
     display: inline-flex;
+    flex-basis: 25%;
+    align-items: center;
 }
 
 .content__taplet-nav li a{
@@ -627,13 +646,20 @@ main.content{
     width: 100%;
 }
 
+.content__taplet-nav li+li::before{
+    content: "";
+    display: block;
+    border-right: 1px solid #ccc;
+    height: 60%;
+}
+
 .content__container{
     padding: 32px 0;
     display: flex;
 }
 
 .content__sidebar{
-    display: inline-block;  
+    display: none;  
     border-radius: 2px;
     margin-top: 4px;
     flex: 1;
@@ -688,7 +714,7 @@ main.content{
     flex: 5.25;
     margin-left: 10px;
     margin-top: 4px;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .content__sort{
@@ -879,7 +905,7 @@ main.content{
     content: "";
     display: block;
     border-style: solid;
-    border-width: 0 22px 4px 21px ;
+    border-width: 0 22px 4px 22px ;
     border-color: transparent #FFDA4B  transparent #FFDA4B;
     position: absolute;
     top: 100%;
@@ -1002,10 +1028,12 @@ ul.content__main-nav-page{
 ul.content__main-nav-page a{
     color: #939393;
     text-decoration: none;
+    display: block;
+    padding: 4px 16px;
+    color: inherit
 }
 
 ul.content__main-nav-page  li{
-    padding: 4px 16px;
     margin: 0 12px;
 }
 

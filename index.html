@@ -99,6 +99,10 @@
 
                 <div class="header__bottom">
 
+                    <div class="search-taplet-btn" onclick="showSearchForm()">
+                        <i class="fas fa-search"></i>
+                    </div>
+
                     <a href="" class="header__logo">
                         <svg class="header__logo-img" viewBox="0 0 192 65">
                             <g fill-rule="evenodd">
@@ -107,7 +111,7 @@
                         </svg>
                     </a>
 
-                    <form action="#" class="header__search">
+                    <form action="#" id="header__search" class="header__search">
 
                         <input type="text" autocomplete="on" name="search-input" placeholder="Nhập để tìm kiếm sản phẩm" class="search-input search-items">
                         
@@ -213,6 +217,8 @@
 
                                     </div>
 
+                                    
+
                                 </div>
 
                                 <div class="cart-btn">
@@ -231,6 +237,14 @@
         </header>
 
         <main class="content">
+
+            <ul class="content__phone-nav">
+                <li><a href=""><p>Dụng cụ & thiết bị  tiện ích</p></a></li>
+                <li><a href=""><p>Dụng cụ & thiết bị  tiện ích</p></a></li>
+                <li><a href=""><p>Dụng cụ & thiết bị  tiện ích</p></a></li>
+                <li><a href=""><p>Dụng cụ & thiết bị  tiện ích</p></a></li>
+                <li><a href=""><p>Dụng cụ & thiết bị  tiện ích</p></a></li>
+            </ul>
 
             <ul class="content__taplet-nav">
                 <li><a href="">Liên quan</a></li>
@@ -303,7 +317,7 @@
                                 </div>
 
                                 <div class="items-img"></div>
-                             
+                                
                                 
                                 <div class="items__info">
                                     <h4>Set dưỡng trắng Whoo đông y hoàng  cung Gong Jinh Yang Seol Radiant</h4>
@@ -762,14 +776,14 @@
 
                     <ul class="content__main-nav-page">
                         <a href=""><li ><i class="fas fa-angle-left"></i></li></a>
-                        <a href=""><li class="main-nav-page__curent-page">1</li></a>
-                        <a href=""><li>2</li></a>
-                        <a href=""><li>3</li></a>
-                        <a href=""><li>4</li></a>
-                        <a href=""><li>5</li></a>
-                        <a href=""><li>...</li></a>
-                        <a href=""><li>14</li></a>
-                        <a href=""><li><i class="fas fa-angle-right"></i></li></a>
+                        <li class="main-nav-page__curent-page"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">...</a></li>
+                        <li><a href="">14</a></li>
+                        <li><a href=""><i class="fas fa-angle-right"></i></a></li>
                     </ul>
 
                 </div>
@@ -846,5 +860,18 @@
 
     </div>
     
+    
+    <script>
+        let searchForm=document.getElementById('header__search');
+
+        
+        function showSearchForm(){
+            if(searchForm.style.display!='flex')
+            searchForm.style.display='flex';
+            else searchForm.style.display='none';
+        }
+
+    </script>
+
 </body>
 </html>
