@@ -228,6 +228,7 @@ ul.header__right-nav a{
 }
 
 .header__subnotice{
+    transform-origin: calc(100% - 20px) top;
     margin-top: 4px;
     transform: scale(0);
     opacity: 0;
@@ -550,6 +551,14 @@ ul.header__right-nav a{
     padding-bottom: 4px;
 }
 
+.subcart__info strong{
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
 .subcart__discript{
     display: flex;   
     font-size: 1.2rem; 
@@ -563,7 +572,9 @@ ul.header__right-nav a{
 }
 
 .price{
-
+    min-width: 90px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .price .single-price{
